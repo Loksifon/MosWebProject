@@ -1,7 +1,6 @@
 import { Space, Table, Tag } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
-
-interface IDataType {
+interface IUserDataType {
   key: string;
   name: string;
   age: number;
@@ -10,11 +9,11 @@ interface IDataType {
 }
 
 type Props = {
-	userData: IDataType[]
+	userData: IUserDataType[]
 }
 
 export const UserTable = (props: Props) => {
-	const columns: ColumnsType<IDataType> = [
+	const columns: ColumnsType<IUserDataType> = [
 		{
 			title: 'Name',
 			dataIndex: 'name',

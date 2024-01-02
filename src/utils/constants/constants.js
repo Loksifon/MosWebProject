@@ -1,3 +1,6 @@
+export const LIMIT_LIST_SCHOOL = 10
+
+
 export const UserData = [
 	{
 		key: "1",
