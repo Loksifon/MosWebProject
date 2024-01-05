@@ -1,9 +1,11 @@
+import { Container } from '@/components/Layout'
+import { Title } from '@/components/UI'
 import React from 'react'
 
 export const ProfilePage = () => {
 	return (
-		<>
-			<h1>ProfilePage</h1>
-		</>
+		<Container>
+			<Title>ProfilePage</Title>
+		</Container>
 	)
 }

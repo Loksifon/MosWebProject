@@ -1,7 +1,7 @@
 import { Table, Button } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import { useSchoolData } from '@/utils/Hooks/useSchoolData';
-
+import styled from 'styled-components';
 export interface ISchoolDataType {
   country: string;
   name: string;

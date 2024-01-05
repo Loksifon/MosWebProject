@@ -6,6 +6,7 @@ export interface IButtonProps {
 	children: React.ReactNode;
 	
 }
+
 export const Button: React.FC = ({onClick, children}) => {
 	return (
 		<ButtonAuth onClick={onClick}>{children}</ButtonAuth>

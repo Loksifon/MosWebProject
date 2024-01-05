@@ -1,11 +1,12 @@
 import React from 'react'
 import { SchoolTable } from '@/components/SchoolTable/SchoolTable'
-
+import { Container } from '@/components/Layout'
+import { Title } from '@/components/UI'
 export const SchoolTablePage = () => {
 	return (
-		<>
-			<h1>SchoolTablePage</h1>
+		<Container>
+			<Title>SchoolTablePage</Title>
 			<SchoolTable/>
-		</>
+		</Container>
 	)
 }

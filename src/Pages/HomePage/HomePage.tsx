@@ -1,10 +1,12 @@
+import { Container } from '@/components/Layout'
+import { Title, Text } from '@/components/UI'
 import React from 'react'
 
 export const HomePage = () => {
 	return (
-		<div>
-			<h1>HomePage</h1>
-			<p>Корнелюк Владислав Андреевич</p>
-		</div>
+		<Container>
+			<Title>HomePage</Title>
+			<Text>Это главная страница</Text>
+		</Container>
 	)
 }

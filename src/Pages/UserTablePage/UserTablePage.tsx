@@ -1,11 +1,13 @@
 import React from 'react'
 import { UserTable } from '@/components/UserTable/UserTable'
 import { UserData } from '@/utils/constants/Constants'
+import { Container } from '@/components/Layout/index'
+import { Title } from '@/components/UI'
 export const UserTablePage = () => {
 	return (
-		<>
-			<h1>UserTablePage</h1>
+		<Container>
+			<Title>UserTablePage</Title>
 			<UserTable userData={UserData}/>
-		</>
+		</Container>
 	)
 }
