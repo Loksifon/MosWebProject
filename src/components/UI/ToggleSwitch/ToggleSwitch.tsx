@@ -1,6 +1,11 @@
 import React, { ChangeEvent, useState } from "react";
 import styled from "styled-components";
 
+interface ToggleSwitchProps {
+  toggleTheme: () => void;
+  isDarkTheme: boolean;
+}
+
 const Label = styled.label`
   display: flex;
   align-items: center;
@@ -26,17 +31,16 @@ const Switch = styled.span`
     border-radius: 35px;
     top: 50%;
     left: 4px;
-		background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.white};
     transform: translate(0, -50%);
   }
 `;
-
 
 const Input = styled.input`
   display: none;
 
   &:checked + ${Switch} {
-		background: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
 
     &:before {
       transform: translate(32px, -50%);
@@ -44,18 +48,20 @@ const Input = styled.input`
   }
 `;
 
-
-export const ToggleSwitch = ({toggleTheme, isDarkTheme}) => {
-  const [isToggled, setIsToggled] = useState(isDarkTheme); 
+export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
+  toggleTheme,
+  isDarkTheme,
+}) => {
+  const [isToggled, setIsToggled] = useState(isDarkTheme);
 
   const onToggle = () => {
-		setIsToggled(!isToggled);
-		toggleTheme();
-	}
+    setIsToggled(!isToggled);
+    toggleTheme();
+  };
 
   return (
     <Label>
-			<span>{isToggled ? "Light" : "Dark"}</span>
+      <span>{isToggled ? "Light" : "Dark"}</span>
       <Input checked={isToggled} type="checkbox" onChange={onToggle} />
       <Switch />
     </Label>

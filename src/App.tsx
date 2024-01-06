@@ -4,9 +4,9 @@ import { MainRouter } from "@/Routes/MainRouter";
 import { Navbar, Footer } from "@/components/Layout";
 import { GlobalStyles } from '@/styles/Global';
 import {lightTheme, darkTheme} from "@/styles/Theme";
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
-export const App = () => {
+export const App: FC = () => {
 	
 	const [theme, setTheme] = useState("darkTheme");
 	

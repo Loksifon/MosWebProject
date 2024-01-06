@@ -4,6 +4,7 @@ import {
   SCHOOL_ROUTE,
   USER_ROUTE,
   PROFILE_ROUTE,
+	FORM_ROUTE
 } from "@/config/config";
 import { AuthContext } from "@/utils/context/AuthContext";
 import { Button } from "@/components/UI";
@@ -36,6 +37,9 @@ export const Navbar: FC<IProps> = ({ toggleTheme }) => {
               </li>
               <li>
                 <NavLinkStyled to={USER_ROUTE}>User</NavLinkStyled>
+              </li>
+							<li>
+                <NavLinkStyled to={FORM_ROUTE}>Form</NavLinkStyled>
               </li>
               <li>
                 <NavLinkStyled to={PROFILE_ROUTE}>Profile</NavLinkStyled>
