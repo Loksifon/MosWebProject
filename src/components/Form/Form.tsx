@@ -1,42 +1,13 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { Button } from '@/components/UI'
+import { ErrorContainer, ErrorMessage, StyledForm, StyledInput, StyledLabel } from './Form.styles';
 
 interface IForm {
   age: string;
   name: string;
   email: string;
 }
-
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-	margin: 1rem auto;
-`
-
-const StyledInput = styled.input<{ hasError: boolean }>`
-  border: 2px solid ${(props) => (props.hasError ? 'red' : 'black')};
-	border-radius: 5px;
-	background-color: ${(props) => (props.hasError ? 'pink' : 'white')};
-  padding: 10px;
-  margin-bottom: 10px;
-`
-
-const StyledLabel = styled.label`
-  margin-bottom: 5px;
-`
-
-const ErrorMessage = styled.span`
-  color: red;
-  margin-top: 5px;
-`
-
-const ErrorContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`
 
 export const Form: React.FC = () => {
   const { register, handleSubmit, formState: { errors }, trigger, reset } = useForm<IForm>()
