@@ -6,13 +6,11 @@ export interface IUniversity {
   name: string;
 }
 
-
-
-export const CardUniversity: FC<{data: IUniversity}> = ({data}) => {
-  return (  
+export const CardUniversity: FC<{ data: IUniversity }> = ({ data }) => {
+  return (
     <CardStyled>
-      <CardTitle>{ data.name }</CardTitle>
-      <CardText>{ data.country }</CardText>
+      <CardTitle>{data.name}</CardTitle>
+      <CardText>{data.country}</CardText>
     </CardStyled>
-  )
-}
+  );
+};

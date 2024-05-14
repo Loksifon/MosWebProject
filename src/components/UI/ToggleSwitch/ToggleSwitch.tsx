@@ -48,10 +48,7 @@ const Input = styled.input`
   }
 `;
 
-export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
-  toggleTheme,
-  isDarkTheme,
-}) => {
+export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ toggleTheme, isDarkTheme }) => {
   const [isToggled, setIsToggled] = useState(isDarkTheme);
 
   const onToggle = () => {

@@ -1,20 +1,20 @@
 interface Size {
-  xs: string
-  sm: string
-  md: string
-  lg: string
-  xl: string
-  xxl: string
+  xs: string;
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+  xxl: string;
 }
 
 const size: Size = {
-  xs: '350px', 
-  sm: '600px', 
-  md: '900px', 
-  lg: '1280px', 
-  xl: '1536px', 
-  xxl: '1920px', 
-}
+  xs: "350px",
+  sm: "600px",
+  md: "900px",
+  lg: "1280px",
+  xl: "1536px",
+  xxl: "1920px",
+};
 
 export const device = {
   xs: `(max-width: ${size.xs})`,
@@ -23,4 +23,4 @@ export const device = {
   lg: `(max-width: ${size.lg})`,
   xl: `(max-width: ${size.xl})`,
   xxl: `(max-width: ${size.xxl})`,
-}
+};
