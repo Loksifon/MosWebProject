@@ -4,7 +4,6 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import { DocumentPDF } from "@/components/MyDocument/MyDocument";
 import { StyledForm, StyledInput } from "./Form.styles";
 
-
 interface IFormPDF {
   name: string;
   picture: FileList;

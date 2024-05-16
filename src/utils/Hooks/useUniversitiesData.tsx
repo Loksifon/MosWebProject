@@ -19,7 +19,7 @@ export const useUniversitiesData = () => {
       setLoading(true);
       const offset = (currentPage - 1) * limit;
       const response = await axios.get(
-        `http://universities.hipolabs.com/search?offset=${offset}&limit=${LIMIT_LIST_UNIVERSITY}`
+        `http://universities.hipolabs.com/search?offset=${offset}&limit=${LIMIT_LIST_UNIVERSITY}`,
       );
 
       setDataSource((prev) => [...prev, ...response.data]);

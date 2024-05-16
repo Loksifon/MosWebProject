@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from 'styled-components'
+import styled, { createGlobalStyle, css } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 *,
@@ -97,4 +97,4 @@ a{
 li{
 	list-style-type: none;
 }
-`
+`;

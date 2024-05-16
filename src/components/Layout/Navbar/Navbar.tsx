@@ -1,11 +1,5 @@
 import React, { FC, useContext, useState } from "react";
-import {
-  HOME_ROUTE,
-  SCHOOL_ROUTE,
-  USER_ROUTE,
-  PROFILE_ROUTE,
-	FORM_ROUTE
-} from "@/config/config";
+import { HOME_ROUTE, SCHOOL_ROUTE, USER_ROUTE, PROFILE_ROUTE, FORM_ROUTE } from "@/config/config";
 import { AuthContext } from "@/utils/context/AuthContext";
 import { Button } from "@/components/UI";
 import { NavLinkStyled } from "./Navbar.styles";
@@ -38,7 +32,7 @@ export const Navbar: FC<IProps> = ({ toggleTheme }) => {
               <li>
                 <NavLinkStyled to={USER_ROUTE}>User</NavLinkStyled>
               </li>
-							<li>
+              <li>
                 <NavLinkStyled to={FORM_ROUTE}>Form</NavLinkStyled>
               </li>
               <li>
