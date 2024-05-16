@@ -1,5 +1,5 @@
 export const LIMIT_LIST_SCHOOL = 10
-
+export const LIMIT_LIST_UNIVERSITY = 3
 
 export const UserData = [
 	{
